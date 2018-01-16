@@ -1,3 +1,84 @@
-/*
-* Styles and css for the whole application here
-*/
+div.page-header p{
+	font-family: 'Pacifico', cursive;
+}
+
+.space30 {
+	margin-bottom:50px;
+}
+
+.space35 {
+	margin-bottom:35px;
+}
+
+
+.space20 {
+	margin-bottom:20px;
+}
+
+.space70 {
+	margin-bottom:70px;
+}
+
+#footer{
+	padding: 10px;
+	border-top: 1px solid black;
+	color: #eeeeee;
+	background-color: #1d1d1d;
+	text-align: center;
+}
+
+div#product_info {
+	text-align: left;
+}
+
+div.product_price {
+	font-size: 40px;
+}
+
+div.product_detail {
+	max-width: 75%;
+	margin: auto;
+}
+
+.product_quantity {
+	margin: 15px 0 35px;
+	display: table;
+	width: 100%;
+}
+
+.product_quantity span {
+	float: left;
+	line-height: 29px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: 84px;
+}
+
+.product_quantity input {
+	color: #000;
+	font-size: 12px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	padding: 6px 10px;
+	width: 50px;
+	display: table;
+	text-align: center;
+}
+
+.product_category {
+	margin:20px 0;
+	font-size:12px;
+}
+
+.logregform {
+	border:1px solid #e2e2e2;
+	padding:50px;
+}
+
+.table {
+    border-radius: 5px;
+    width: 90%;
+    margin: 0px auto;
+    float: none;
+}
