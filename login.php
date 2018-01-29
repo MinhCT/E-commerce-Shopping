@@ -81,12 +81,12 @@
 		<div class="row">
 			<div class="col-md-6 box-content">
 				<h4 class="heading text-center">I'M ALREADY HAVE AN ACCOUNT</h4>
-				<form class="logregform">
+				<form class="logregform" action="check-login.php" method="post">
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-12">
-								<label>Username or E-mail Address</label>
-								<input type="text" value="" class="form-control">
+								<label>E-mail Address</label>
+								<input name="email" type="text" value="" class="form-control">
 							</div>
 						</div>
 					</div>
@@ -96,7 +96,7 @@
 							<div class="col-md-12">
 								<a class="pull-right" href="#">(Lost Password?)</a>
 								<label>Password</label>
-								<input type="password" value="" class="form-control">
+								<input name="password" type="password" value="" class="form-control">
 							</div>
 						</div>
 					</div>

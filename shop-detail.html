@@ -1,191 +1,201 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Shopping cart</title>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link href="font/Pacifico-Regular.ttf" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Shopping cart</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="font/Pacifico-Regular.ttf" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
-	<!-- HEADER -->
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 logo">
-					<a href="#"><img src="img/logo.jpg" class="img-responsive" style="height: 150px;"></a>
-				</div>
-				<div class="offset-md-9">
-					
-				</div>
-			</div>
-			<div class="menubar">
-				<nav class="navbar navbar-inverse">
-				  <div class="container-fluid">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				      <a class="navbar-brand" href="#">Home</a>
-				    </div>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 logo">
+                    <a href="#"><img src="img/logo.jpg" class="img-responsive" style="height: 150px;"></a>
+                </div>
+                <div class="offset-md-9">
 
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="#">Shopping <span class="sr-only">(current)</span></a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >Categories <span class="caret"></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Knife</a></li>
-				            <li><a href="#">Clothes</a></li>
-				            <li><a href="#">Equipment</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Toys</a></li>
-				          </ul>
-				        </li>
-				        <li><a href="#">Account</a></li>
+                </div>
+            </div>
+            <div class="menubar">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Home</a>
+                        </div>
 
-				      </ul>
-				      
-				      <ul class="nav navbar-nav navbar-right">
-				      	<form class="navbar-form navbar-left">
-					        <div class="form-group">
-					          <input type="text" class="form-control" placeholder="Search on Shopping Cart">
-					        </div>
-					        <button type="submit" class="btn btn-default">Search</button>
-				      	</form>
-				        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>				        
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  	</div><!-- /.container-fluid -->
-				</nav>
-			</div>
-		</div>
-	</header>
-	<!-- END OF HEADER -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Shopping <span class="sr-only">(current)</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="true">Categories <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Knife</a></li>
+                                        <li><a href="#">Clothes</a></li>
+                                        <li><a href="#">Equipment</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Toys</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Account</a></li>
 
-	<!-- CONTENT -->
-	<div class="container">
-		<div class="row">
-			<div class="page-header text-center">
-				<h2>SHOP</h2>
-				<p>You can order products from here</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-10 product_detail">
-				<div class="col-md-6">
-					<img src="img/ssd-samsung.jpg" class="img-responsive">
-				</div>
-				<div class="col-md-6">
-					<div id="product_info">
-						<h2>SSD Samsung</h2>
-						<div class="product_price">$150</div>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-						<div class="rating">
-							<span class="fa fa-star act"></span>
-							<span class="fa fa-star act"></span>
-							<span class="fa fa-star act"></span>
-							<span class="fa fa-star act"></span>
-							<span class="fa fa-star act"></span>
-						</div>
-						<div class="product_quantity">
-							<span>Quantity:</span> 
-							<form>
-								<input type="text" placeholder="1">
-							</form>
-						</div>
-						<input type="button" name="Add" value="Add to cart" class="btn btn-warning">
-						<div class="product_category">
-							<span>Category: <a href="#">Knive</a> </span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<ul class="nav nav-tabs">
-					    <li class="active"><a href="#home">OVERVIEW</a></li>
-					    <li><a href="#menu1">PRODUCT INFO</a></li>
-					    <li><a href="#menu2">REVIEW</a></li>
-					  </ul>
+                            </ul>
 
-					  <div class="tab-content">
-					    <div id="home" class="tab-pane fade in active">
-					      <h3>OVERVIEW</h3>
-					      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					    </div>
-					    <div id="menu1" class="tab-pane fade">
-					      <h3>PRODUCT INFO</h3>
-					      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					    </div>
-					    <div id="menu2" class="tab-pane fade">
-					      <h3>REVIEW</h3>
-					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-					    </div>
-					  </div>
-				</div>
-				<div class="row">
-					<div class="page-header product_related">
-						<h3>RELATED PRODUCTS</h3>
-					</div>
-					<div class="col-md-4">
-						<div class="card" style="width: 20rem;">
-						  <img src="img/ssd-samsung.jpg" class="img-responsive" alt="">
-						  <div class="card-block">
-						    <h4 class="card-title">Samsung SSD</h4>
-						    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
-						    <a href="#" class="btn btn-warning"><span class="fa fa-link"></span>  Detail</a>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card" style="width: 20rem;">
-						  <img src="img/ssd-samsung.jpg" class="img-responsive" alt="">
-						  <div class="card-block">
-						    <h4 class="card-title">Samsung SSD</h4>
-						    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
-						    <a href="#" class="btn btn-warning"><span class="fa fa-link"></span>  Detail</a>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card" style="width: 20rem;">
-						  <img src="img/ssd-samsung.jpg" class="img-responsive" alt="">
-						  <div class="card-block">
-						    <h4 class="card-title">Samsung SSD</h4>
-						    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
-						    <a href="#" class="btn btn-warning"><span class="fa fa-link"></span>  Detail</a>
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-	<!-- END OF CONTENT -->
-	<div class="clearfix space35"></div>
-	<!-- FOOTER -->
-	<div id="footer">
-		<hr>
-		<p>Theme By | MinhNQ</p>
-		<p>This site is only for study purpose</p>
-	</div>
-	<!-- END OF FOOTER -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <form class="navbar-form navbar-left">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search on Shopping Cart">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Search</button>
+                                </form>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- CONTENT -->
+    <div class="container">
+        <div class="row">
+            <div class="page-header text-center">
+                <h2>SHOP</h2>
+                <p>You can order products from here</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10 product_detail">
+                <div class="col-md-6">
+                    <img src="img/ssd-samsung.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div id="product_info">
+                        <h2>SSD Samsung</h2>
+                        <div class="product_price">$150</div>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration. There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered alteration.</p>
+                        <div class="rating">
+                            <span class="fa fa-star act"></span>
+                            <span class="fa fa-star act"></span>
+                            <span class="fa fa-star act"></span>
+                            <span class="fa fa-star act"></span>
+                            <span class="fa fa-star act"></span>
+                        </div>
+                        <div class="product_quantity">
+                            <span>Quantity:</span>
+                            <form>
+                                <input type="text" placeholder="1">
+                            </form>
+                        </div>
+                        <input type="button" name="Add" value="Add to cart" class="btn btn-warning">
+                        <div class="product_category">
+                            <span>Category: <a href="#">Knive</a> </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#home">OVERVIEW</a></li>
+                        <li><a href="#menu1">PRODUCT INFO</a></li>
+                        <li><a href="#menu2">REVIEW</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <h3>OVERVIEW</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <h3>PRODUCT INFO</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <h3>REVIEW</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="page-header product_related">
+                        <h3>RELATED PRODUCTS</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 20rem;">
+                            <img src="img/ssd-samsung.jpg" class="img-responsive" alt="">
+                            <div class="card-block">
+                                <h4 class="card-title">Samsung SSD</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                    commodo ligula eget.</p>
+                                <a href="#" class="btn btn-warning"><span class="fa fa-link"></span> Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 20rem;">
+                            <img src="img/ssd-samsung.jpg" class="img-responsive" alt="">
+                            <div class="card-block">
+                                <h4 class="card-title">Samsung SSD</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                    commodo ligula eget.</p>
+                                <a href="#" class="btn btn-warning"><span class="fa fa-link"></span> Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 20rem;">
+                            <img src="img/ssd-samsung.jpg" class="img-responsive" alt="">
+                            <div class="card-block">
+                                <h4 class="card-title">Samsung SSD</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                    commodo ligula eget.</p>
+                                <a href="#" class="btn btn-warning"><span class="fa fa-link"></span> Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END OF CONTENT -->
+    <div class="clearfix space35"></div>
+    <!-- FOOTER -->
+    <div id="footer">
+        <hr>
+        <p>Theme By | MinhNQ</p>
+        <p>This site is only for study purpose</p>
+    </div>
+    <!-- END OF FOOTER -->
 </div>
 </body>
 <script>
-$(document).ready(function(){
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
+    $(document).ready(function () {
+        $(".nav-tabs a").click(function () {
+            $(this).tab('show');
+        });
     });
-});
 </script>
 </html>
